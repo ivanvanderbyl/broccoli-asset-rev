@@ -9,7 +9,7 @@ module.exports = {
       enabled: this.app.env === 'production',
       exclude: [],
       extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map'],
-      prepend: '',
+      prepend: process.env.ASSETS_PREPEND || '',
       replaceExtensions: ['html', 'css', 'js']
     }
   
